@@ -1,0 +1,15 @@
+/node_modules
+
+.env
+.env.*
+!.env.example
+
+/dist
+
+/.certs
+
+# OS generated files
+.DS_Store
+
+# Test coverage
+/coverage
