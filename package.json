@@ -6,7 +6,7 @@
     "dev": "tsx --watch  --env-file .env.local server.ts",
     "dev:staging": "tsx --watch --env-file .env.staging server.ts",
     "dev:prod": "tsx --watch --env-file .env.production server.ts",
-    "start": "node --env-file .env.production dist/server.js",
+    "start": "node --env-file .env dist/server.js",
     "build": "tsc && tsc-alias",
     "type-check": "tsc --noEmit",
     "lint": "eslint .",
