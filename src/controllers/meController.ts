@@ -10,5 +10,5 @@ export const getProfile: RequestHandler = async (req, res) => {
   };
   const catFact = await fetchCat();
   const timestamp = new Date().toISOString();
-  res.json({ fact: catFact.fact, status: "success", timestamp, user });
+  res.json({ status: "success", user, timestamp, fact: catFact.fact });
 };

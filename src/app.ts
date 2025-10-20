@@ -46,7 +46,7 @@ const limiter = rateLimit({
 app.use(limiter);
 
 // Routes
-app.use("/", (req, res) => {
+app.get("/", (req, res) => {
   res.status(200).json("Hello world!");
 });
 app.use("/me", meRouter);
